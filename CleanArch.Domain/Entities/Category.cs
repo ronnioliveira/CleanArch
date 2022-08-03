@@ -15,7 +15,7 @@ namespace CleanArch.Domain.Entities
 
         public Category(int id, string name)
         {
-            DomainExceptionValidation.When(id < 0, "Invalid Id");
+            DomainExceptionValidation.When(id < 0, "Invalid Id.");
             
             Id = id;
             
@@ -34,9 +34,9 @@ namespace CleanArch.Domain.Entities
 
         private void ValidateDomain(string name)
         {
-            DomainExceptionValidation.When(string.IsNullOrWhiteSpace(name), "Name is required");
+            DomainExceptionValidation.When(string.IsNullOrWhiteSpace(name), "Name is required.");
             
-            DomainExceptionValidation.When(name.Length < 3, "Invalid name. Minimum 3 characters");
+            DomainExceptionValidation.When(name.Length < 3, "Invalid name. Minimum 3 characters.");
 
             Name = name;
         }
