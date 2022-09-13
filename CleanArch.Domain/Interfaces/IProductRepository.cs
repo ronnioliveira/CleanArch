@@ -8,9 +8,10 @@ namespace CleanArch.Domain.Interfaces
     {
         Task<IEnumerable<Product>> GetProductsAsync();
 
+        Task<Product> GetProductCategoryAsync(int? id);
         Task<Product> GetAsync(int? id);
-        Task<Product> CreateAsync(Product category);
-        Task<Product> UpdateAsync(Product category);
-        Task<Product> RemoveAsync(Product category);
+        Task<Product> CreateAsync(Product product);
+        Task<Product> UpdateAsync(Product product);
+        Task<Product> RemoveAsync(Product product);
     }
 }
