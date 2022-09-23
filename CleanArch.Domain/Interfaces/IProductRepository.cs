@@ -7,8 +7,7 @@ namespace CleanArch.Domain.Interfaces
     public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetProductsAsync();
-
-        Task<Product> GetProductsCategoryAsync(int? id);
+        
         Task<Product> GetAsync(int? id);
         Task<Product> CreateAsync(Product product);
         Task<Product> UpdateAsync(Product product);

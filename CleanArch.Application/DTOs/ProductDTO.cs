@@ -6,6 +6,8 @@ namespace CleanArch.Application.DTOs
 {
     public class ProductDTO
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Product Name is required")]
         [MinLength(3)]
         [MaxLength(100)]

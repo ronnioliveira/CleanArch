@@ -8,7 +8,6 @@ namespace CleanArch.Application.Interfaces
     {
         Task<IEnumerable<ProductDTO>> GetProductsAsync();
 
-        Task<ProductDTO> GetProductCategoryAsync(int? id);
         Task<ProductDTO> GetAsync(int? id);
         Task CreateAsync(ProductDTO product);
         Task UpdateAsync(ProductDTO product);
