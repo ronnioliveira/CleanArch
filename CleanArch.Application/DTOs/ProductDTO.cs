@@ -33,6 +33,6 @@ namespace CleanArch.Application.DTOs
 
 
         public int CategoryId { get; set; }
-        public Category Categoy { get; set; }
+        public Category Category { get; set; }
     }
 }
